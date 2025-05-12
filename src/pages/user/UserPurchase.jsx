@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import UserNavbar from '../../components/UserNavbar';
+import config from '../../config';
 
 const UserPurchases = () => {
   const [purchases, setPurchases] = useState([]);
 
   const fetchPurchases = async () => {
     try {
-      const response = await fetch('http://localhost:3000/user/purchases', {
+      const response = await fetch(`${config.apiUrl}/user/purchases`, {
         headers: {
           'token': localStorage.getItem('userToken')
         },
