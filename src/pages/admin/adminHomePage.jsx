@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import AdminNavbar from '../../components/AdminNavbar';
 import { useNavigate } from 'react-router-dom';
+import config from '../../config';
+
 const AdminHomePage = () => {
   const [courses, setCourses] = useState([]);
   const navigate=useNavigate()
   
   const fetchCourses = async () => {
     try {
-      const response = await fetch('http://localhost:3000/admin/course/bulk', {
+      const response = await fetch(`${config.apiUrl}/admin/course/bulk`, {
         headers: {
           'token': `${localStorage.getItem('adminToken')}`
         },
