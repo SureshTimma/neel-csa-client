@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import UserNavbar from '../../components/UserNavbar';
-import config from '../../config';
+import config from "/src/config";
 
 const UserHomePage = () => {
   const [courses, setCourses] = useState([]);
