@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AdminSignin from "./adminSignin";
-import config from "../../config";
+import config from "/src/config";
 
 const AdminSignup = () => {
   const navigate = useNavigate();
