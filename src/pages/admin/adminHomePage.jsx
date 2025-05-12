@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AdminNavbar from '../../components/AdminNavbar';
 import { useNavigate } from 'react-router-dom';
-import config from '../../config';
+import config from "/src/config";
 
 const AdminHomePage = () => {
   const [courses, setCourses] = useState([]);
