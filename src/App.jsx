@@ -1,8 +1,8 @@
 
 import UserSignin from './pages/user/userSignin'
 import UserSignup from './pages/user/userSignUp'
-import UserHomePage from './pages/user/userHomePage'
-import UserPurchases from './pages/user/UserPurchases'
+import UserHomePage from './pages/user/UserHomePage.jsx'
+import UserPurchases from './pages/user/userPurchases.jsx'
 
 
 import AdminSignin from './pages/admin/adminSignin'
