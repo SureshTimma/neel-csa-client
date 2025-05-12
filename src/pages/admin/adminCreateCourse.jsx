@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AdminNavbar from '../../components/AdminNavbar';
-import config from '../../config';
+import config from "/src/config";
 
 const AdminCreateCourse = () => {
   const navigate = useNavigate();
