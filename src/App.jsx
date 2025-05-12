@@ -2,8 +2,8 @@
 import UserSignin from './pages/user/userSignin'
 import UserSignup from './pages/user/userSignUp'
 import UserHomePage from './pages/user/UserHomePage'
-// Import matches the actual filename case
-import UserPurchases from './pages/user/userPurchases'
+import UserPurchases from './pages/user/UserPurchase'
+// ...existing code...
 
 import AdminSignin from './pages/admin/adminSignin'
 import AdminSignup from './pages/admin/adminSignup'
