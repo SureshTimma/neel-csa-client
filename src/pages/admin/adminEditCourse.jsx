@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import AdminNavbar from '../../components/AdminNavbar';
-import config from '../../config';
+import config from "/src/config";
 
 const AdminEditCourse = () => {
   const navigate = useNavigate();
