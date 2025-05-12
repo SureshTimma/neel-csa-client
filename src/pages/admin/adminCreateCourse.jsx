@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AdminNavbar from '../../components/AdminNavbar';
+import config from '../../config';
 
 const AdminCreateCourse = () => {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const AdminCreateCourse = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/admin/course', {
+      const response = await fetch(`${config.apiUrl}/admin/course`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

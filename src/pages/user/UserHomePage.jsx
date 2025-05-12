@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import UserNavbar from '../../components/UserNavbar';
+import config from '../../config';
 
 const UserHomePage = () => {
   const [courses, setCourses] = useState([]);
 
   const fetchCourses = async () => {
     try {
-      const response = await fetch('http://localhost:3000/course/preview');
+      const response = await fetch(`${config.apiUrl}/course/preview`);
       const data = await response.json();
       setCourses(data.courses);
     } catch (error) {
@@ -16,7 +17,7 @@ const UserHomePage = () => {
 
   const handlePurchase = async (courseId) => {
     try {
-      const response = await fetch('http://localhost:3000/course/purchase', {
+      const response = await fetch(`${config.apiUrl}/course/purchase`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
