@@ -1,15 +1,17 @@
 
 import UserSignin from './pages/user/userSignin'
 import UserSignup from './pages/user/userSignUp'
-import UserHomePage from './pages/user/UserHomePage.jsx'
-import UserPurchases from './pages/user/userPurchases.jsx'
-
+import UserHomePage from './pages/user/UserHomePage'
+// Import matches the actual filename case
+import UserPurchases from './pages/user/userPurchases'
 
 import AdminSignin from './pages/admin/adminSignin'
 import AdminSignup from './pages/admin/adminSignup'
 import AdminHomePage from './pages/admin/adminHomePage'
 import AdminCreateCourse from './pages/admin/adminCreateCourse'
 import AdminEditCourse from './pages/admin/adminEditCourse'
+
+// ...rest of the code remains the same
 
 
 import StartPage from  './pages/StartPage'
